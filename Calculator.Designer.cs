@@ -278,6 +278,8 @@ namespace LibralexCalculator
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(75, 50);
             this.button18.TabIndex = 17;
+            var image = IconChar.Backspace.ToBitmap(IconFont.Auto,size: 24);
+            this.button18.Image = image;
             this.button18.UseVisualStyleBackColor = true;
             this.button18.Click += new System.EventHandler(this.backspace);
             // 
@@ -307,7 +309,7 @@ namespace LibralexCalculator
             // 
             // value
             // 
-            this.value.Font = new System.Drawing.Font("Arial Narrow", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.value.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.value.Location = new System.Drawing.Point(15, 15);
             this.value.Name = "value";
             this.value.Size = new System.Drawing.Size(318, 44);
